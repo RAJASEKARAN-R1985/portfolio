@@ -1,5 +1,77 @@
 /*@import url('http:fonts.googlepis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');*/
-
+body {
+    font-size: 14px; /* Suitable for smaller screens */
+  }
+  
+  .container {
+    width: 100%; /* Full width on mobile */
+    padding: 15px;
+  }
+  
+  img {
+    max-width: 100%; /* Ensures images resize to fit smaller screens */
+    height: auto;
+  }
+  
+  nav {
+    display: block; /* Stack navigation items vertically for mobile */
+  }
+  /* Tablet (min-width 768px) */
+@media (min-width: 768px) {
+    body {
+      font-size: 16px; /* Slightly larger font size for tablets */
+    }
+  
+    .container {
+      width: 80%; /* Content takes up 80% of the screen on tablets */
+      margin: 0 auto; /* Center the content */
+    }
+  
+    nav {
+      display: flex; /* Display navigation horizontally on tablets */
+      justify-content: space-around;
+    }
+  }
+  
+  /* Desktop (min-width 1024px) */
+  @media (min-width: 1024px) {
+    body {
+      font-size: 18px; /* Larger font size for desktop */
+    }
+  
+    .container {
+      width: 70%; /* Content takes up 70% of the screen on desktops */
+    }
+  
+    nav {
+      display: flex; /* Navigation remains horizontal */
+      justify-content: space-between;
+    }
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .item {
+    flex: 1 1 100%; /* Full width on mobile */
+  }
+  
+  @media (min-width: 768px) {
+    .item {
+      flex: 1 1 48%; /* 2 items per row on tablets */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .item {
+      flex: 1 1 30%; /* 3 items per row on desktop */
+    }
+  }
+  mg {
+    width: 100%; /* Ensure images are fluid */
+    height: auto;
+  }
 *{
     margin: 0;
     padding: 0;
